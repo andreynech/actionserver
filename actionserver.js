@@ -1,5 +1,5 @@
 var WebSocketServer = require('ws').Server
-  , wss = new WebSocketServer({port: 8080});
+  , wss = new WebSocketServer({port: process.env.PORT || 5000});
 
 // States and state transition table for simple
 // forward-backward-stop sequence
