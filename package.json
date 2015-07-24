@@ -4,14 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node actionserver.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.13.1",
     "ws": "^0.7.2"
-  },
-  "scripts": {
-    "start": "node actionserver.js"
-  }    
+  }
 }
