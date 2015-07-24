@@ -17,20 +17,20 @@
 
   </head>
   <body>
-    <h1>Pings</h1>
-    <ul id='pings'></ul>
+    <h1>Actions</h1>
+    <ul id='actions'></ul>
 
     <script>
       var host = location.origin.replace(/^http/, 'ws')
       var li = document.createElement('li');
       li.innerHTML = JSON.stringify(host);
-      document.querySelector('#pings').appendChild(li);
+      document.querySelector('#actions').appendChild(li);
       
       var ws = new WebSocket(host);
       ws.onmessage = function(event) {
         var li = document.createElement('li');
         li.innerHTML = event.data;
-        document.querySelector('#pings').appendChild(li);
+        document.querySelector('#actions').appendChild(li);
         ws.send('OK')
       };
     </script>
