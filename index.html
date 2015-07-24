@@ -15,6 +15,11 @@
       }
     </style>
 
+  </head>
+  <body>
+    <h1>Pings</h1>
+    <ul id='pings'></ul>
+
     <script>
       var host = location.origin.replace(/^http/, 'ws')
       var li = document.createElement('li');
@@ -28,9 +33,6 @@
         document.querySelector('#pings').appendChild(li);
       };
     </script>
-  </head>
-  <body>
-    <h1>Pings</h1>
-    <ul id='pings'></ul>
+
   </body>
 </html>
